@@ -65,6 +65,4 @@ The client launches the server automatically over stdio; no external service is 
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 - [FastMCP documentation](https://gofastmcp.com/)
 
-## Submission
 
-After tests and the demo succeed, create a new public GitHub repository named `employee-helpdesk-mcp`, push this folder, and submit only the repository link.
