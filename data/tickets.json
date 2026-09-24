@@ -1,0 +1,39 @@
+[
+  {
+    "id": "TKT-101",
+    "title": "Unable to reset employee password",
+    "description": "The self-service reset page rejects the verification code.",
+    "category": "identity",
+    "status": "in_progress",
+    "priority": "high",
+    "assignee": "identity-support"
+  },
+  {
+    "id": "TKT-102",
+    "title": "VPN connection fails from home",
+    "description": "The VPN client reports that the gateway cannot be reached.",
+    "category": "network",
+    "status": "open",
+    "priority": "medium",
+    "assignee": "network-support"
+  },
+  {
+    "id": "TKT-103",
+    "title": "Laptop is missing required security update",
+    "description": "The managed update did not install after a restart.",
+    "category": "endpoint",
+    "status": "open",
+    "priority": "high",
+    "assignee": "endpoint-support"
+  },
+  {
+    "id": "TKT-104",
+    "title": "VPN access restored after client update",
+    "description": "Updating the VPN client resolved the connection issue.",
+    "category": "network",
+    "status": "resolved",
+    "priority": "low",
+    "assignee": "network-support"
+  }
+]
+

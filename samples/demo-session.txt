@@ -1,0 +1,38 @@
+=== SERVER ===
+Connected: Employee Help Desk
+
+=== DISCOVERY ===
+Tools: ['search_tickets', 'get_ticket', 'analyze_queue', 'read_knowledge_file']
+Resources: ['helpdesk://knowledge/password-reset', 'helpdesk://knowledge/vpn-troubleshooting', 'helpdesk://queue/summary']
+Prompts: ['triage_ticket']
+Advertised client root: project data/ directory
+
+=== TOOL INVOCATION ===
+[
+  {
+    "id": "TKT-102",
+    "title": "VPN connection fails from home",
+    "description": "The VPN client reports that the gateway cannot be reached.",
+    "category": "network",
+    "status": "open",
+    "priority": "medium",
+    "assignee": "network-support"
+  }
+]
+
+=== RESOURCE INVOCATION ===
+# VPN Troubleshooting
+
+1. Confirm the device has a working internet connection.
+2. Confirm the employee is using the current managed VPN client.
+3. Restart the VPN client and retry once.
+4. Check the internal service-status page for a current VPN incident.
+5. If the problem continues, collect the time and non-sensitive error code and route the ticket to network support.
+
+
+
+=== PROMPT INVOCATION ===
+user: Review help-desk ticket TKT-102. Use get_ticket for the record, consult an appropriate knowledge resource, identify urgency and likely category, and recommend the next safe support step. Do not invent missing facts or perform a write action. Cite the resource URI used.
+
+=== EXPECTED ERROR HANDLING ===
+Safe client error: Ticket ID must use the format TKT-###.
